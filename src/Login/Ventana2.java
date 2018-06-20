@@ -19,6 +19,7 @@ public class Ventana2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        list1 = new java.awt.List();
         jPanel1 = new javax.swing.JPanel();
         freVentana2 = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
@@ -48,7 +49,7 @@ public class Ventana2 extends javax.swing.JFrame {
         });
         jPanel1.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 74, -1, -1));
 
-        jcbOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enamorado", "Enojado", "Muerto" }));
+        jcbOpciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chrome", "Word", "Excel" }));
         jcbOpciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcbOpcionesActionPerformed(evt);
@@ -92,13 +93,13 @@ public class Ventana2 extends javax.swing.JFrame {
 
         switch (op) {
             case 0: 
-                this.mostrarImagen("/Imagenes/enamorado.png", op+1, cadena);   
+                this.mostrarImagen("/Imagenes/logo chrome.png", op+1, cadena);   
                 break;
             case 1: 
-                this.mostrarImagen("/Imagenes/enojado.png", op+1, cadena);
+                this.mostrarImagen("/Imagenes/logo word.png", op+1, cadena);
                 break;
             case 2: 
-                this.mostrarImagen("/Imagenes/muerto.png", op+1, cadena);
+                this.mostrarImagen("/Imagenes/logo excel.png", op+1, cadena);
                 break;
         }
     }//GEN-LAST:event_jcbOpcionesActionPerformed
@@ -174,6 +175,7 @@ public class Ventana2 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jcbOpciones;
     private javax.swing.JList<String> jlLista;
     private javax.swing.JLabel lblImagen;
+    private java.awt.List list1;
     // End of variables declaration//GEN-END:variables
 
 }
